@@ -47,6 +47,14 @@ with gr.Blocks() as demo:
         ],
         outputs=[gr.Textbox(label="Translated Sentence", lines=5)],
         title="NusaAI Translator",
+        examples=[
+            ["Silang tersebut taler menandai tanggal hak tersangka mantuka ring diadili dengan cepat.", "Balinese->English"],
+            ["Maroochydore ngalahang Caboolture ring final purwaka.", "Balinese->English"],
+            # ["He recently lost against Raonic in the Brisbane Open.", "English->Balinese"],
+            ["At 11:20, the police asked the protesters to move back on to the pavement, stating that they needed to balance the right to protest with the traffic building up.", "English->Balinese"]
+            # ["Di hari Senin, para ilmuan saking Universitas Kedokteran Stanford mengumumkan sarana penemuan diagnosa baru sane nyilang mengurutkan tipe cells: sebuah chip kecil sane mudah dicetak sane nyilang dibuat nganggen standar inkjet printer sane mungking indik salah satu cent U.S.", "Balinese->English"],
+            # ["The pilot was identified as Squadron Leader Dilokrit Pattavee.", "English->Balinese"]
+        ],
         description="""
 ## Getting Started
 To start using Nusa AI Translator, simply input your text in the text box and select the desired translation direction between Balinese and English.
